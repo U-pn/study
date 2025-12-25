@@ -1,0 +1,10 @@
+button {
+  background-color: #ff388b;
+  color: #eeb5cd;
+}
+
+.mainHoge {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}

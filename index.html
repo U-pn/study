@@ -1,0 +1,27 @@
+<html>
+    <head>
+        <title>偏愛</title>
+        <link rel="stylesheet" href="reset.css">
+        <link rel="stylesheet" href="style.css">
+    </head>
+    <body>
+        <div class="mainHoge">
+            <h1>あなたの愛を送ろう</h1>
+            <p>Loveメーター：<span id="count">0</span></p>
+            <button id="loveButton" onclick="addLove()" >愛</button>
+        </div>
+    </body>
+    <script>
+    let loveButtonSize = 15; 
+    let loveCount = 0;
+
+    function addLove() {
+        let targetElement = document.getElementById("loveButton");
+        loveButtonSize = loveButtonSize + 1;
+        targetElement.style.fontSize = loveButtonSize + "px";
+        loveCount = loveCount + 1;
+        let countSpan = document.getElementById("count");
+        countSpan.innerHTML = loveCount;
+    }
+    </script>
+</html>
